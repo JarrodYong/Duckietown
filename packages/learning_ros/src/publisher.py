@@ -25,7 +25,7 @@ def move_turtle_square():
         while distance_moved < 2.0:
             velocity_publisher.publish(forward_msg)
             rate.sleep()
-            distance_moved += forward_msg.linear.x / rate.hz
+            distance_moved += forward_msg.linear.x / 1
 
         # Stop the turtle
         velocity_publisher.publish(Twist())
