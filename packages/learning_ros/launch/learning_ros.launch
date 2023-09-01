@@ -1,0 +1,8 @@
+<launch>
+    <!-- Include the turtlesim_helper package launch file -->
+    <include file="$(find turtlesim_helper)/launch/turtlesim_helper.launch" />
+
+    <!-- Start the publisher node -->
+    <node name="publisher_node" pkg="learning_ros" type="publisher_node.py" output="screen" />
+</launch>
+
